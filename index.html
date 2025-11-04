@@ -6,17 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="button-design">
     <meta name="keywords" content="button-design">
-    <meta name="author" content="md mubashirul islam">
+    <meta name="author" content="default">
     <title> button design</title>
     <style>
+    /* CSS Code*/
+        body{
+            background-color: rgba(255, 255, 255, 0.12);
+            position: relative;
+        }
       .fast{
         background-color: blueviolet;
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        border: 2px solid white;
       }
-    </style>
-</head>
-<body>
-    <div class="fast">
-     
-    </div>
+      .fast:hover{
+        transition: .34s;
+        border-radius: 50%;
+      }
+      .second{
+        background-color: blueviolet;
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        border-radius: 5px;
+      }
+      .second:hover{
+        border-radius: 50%;
+        transition: all 1s ease-in-out;
+        transform: scale(1.04);
+      }
+      .orange{
+        background-color: orangered;
+        width: 500px;
+        height:  200px;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .content{
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .text{
+        font-family: cursive;
+        font-weight: bold;
+        color: indigo;
+        color: whitesmoke;
+      }
+      .center{
+        font-family: monospace;
+        font-size: 2rem;
+        text-align: center;
+        color: indigo;
+        margin-top: 20px;
+      }
+   </style>
+      <!--html code-->
+       <div class="center">CSS Transition</div>
+       <div class="orange">
+            <div class="content">
+               <div class="text">
+                   <div class="top">With Transion</div> <br>
+                   <div class="fast"></div>
+               </div>
+               <div class="text">
+                    <div>With Transion</div> <br>
+                    <div class="second"></div>
+               </div>
+
+            </div>
+        </div>
 </body>
 </html>
